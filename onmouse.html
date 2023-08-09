@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <h2 id="h1" onmouseup="abc(this)" onmousedown="abc1(this)">welcome</h2>
+    <p id="p1" onmouseup="abc(this)" onmousedowm="abc1(this)"> ecliptech </p>
+    <button onclick="abc(this)">click me</button>
+    <img onclick="abc()" src="/images/java logo.jpeg">
+    <script>    
+        function abc(obj) {
+            obj.innerText = "thankyou";
+        }
+        function abc1(obj) {
+            obj.innerText = "welcome";
+        }
+    </script>
+</body>
+</html>

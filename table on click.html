@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title> Radio Button</title>   <!--navbar-->
+    <div class="container-fluied">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Portfolio
+           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="port.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#week1">week 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#week2">week 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#week3">week 3</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Task
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#task1">Task1</a></li>
+                  <li><a class="dropdown-item" href="#task2">Task2</a></li>
+                  <li><a class="dropdown-item" href="#task3">Task3</a></li>
+                  <li><a class="dropdown-item" href="#task4">Task4</a></li>
+                  <li><a class="dropdown-item" href="#task5">Task5</a></li>
+                  <li><a class="dropdown-item" href="#task6">Task6</a></li>
+                  <li><a class="dropdown-item" href="#task7">Task7</a></li>
+                  <li><a class="dropdown-item" href="#task8">Task8</a></li>
+                  <li><a class="dropdown-item" href="#task9">Task9</a></li>
+                  <li><a class="dropdown-item" href="#task10">Task10</a></li>
+                  <li><a class="dropdown-item" href="#task11">Task11</a></li>
+                  <li><a class="dropdown-item" href="#task12">Task12</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!--nav bar end--><br>
+</head>
+
+<body style="background-color: rgb(209, 192, 180);">
+    <div class="container mt-2">
+            <div class="mt-2">
+                <label class="form-label"><h3 style="text-align: justify; color:aliceblue"> Table on click</h3></label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="Radio1" value="2">
+                    <label class="form-check-label" for="inlineRadio1"> 2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="Radio2" value="3">
+                    <label class="form-check-label" for="inlineRadio2"> 3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="Radio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3"> 4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="Radio4" value="5">
+                    <label class="form-check-label" for="inlineRadio3"> 5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="Radio5" value="6">
+                    <label class="form-check-label" for="inlineRadio3"> 6</label>
+                  </div>
+            </div>
+            <div class="mt-2">
+                <button onclick="table2()" class="btn-dark"> Click here</button>
+            </div>
+            <div id="mydiv">
+    </div>
+    <script>
+       function table2(){
+            let x = document.getElementsByName("table");
+            if(document.getElementById('mydiv').hasChildNodes()){
+                document.getElementById('mydiv').removeChild(document.getElementById('mydiv').firstChild);
+            }
+            const mdiv = document.createElement("div");
+            mdiv.setAttribute('id','innerdiv');
+            document.getElementById('mydiv').appendChild(mdiv);
+            for(let r of x){
+                if(r.checked){
+                    for(let i=1;i<=10;i++){
+                    const para = document.createElement('p');
+                    para.innerText = r.value + " X " + i + " = " + r.value * i;
+                    document.getElementById('innerdiv').appendChild(para);
+
+                }
+            }
+            }
+        }
+    </script>
+</body>
+</html>

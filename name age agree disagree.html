@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>agree disagree</title>
+    <script>
+          let y= document.getElementById("lname").value;
+       function agree(){
+        let x= document.getElementById("fname").value;
+        let z= document.getElementById("lname").value;
+        let y= document.getElementById("p1").innerHTML;
+        document.getElementById("p1").innerHTML= 'your name is  ' +x+' and your age is '+z
+    }
+
+function disagree(){
+    document.getElementById("p1").innerHTML='';
+    document.getElementById("fname").value='';
+    document.getElementById("lname").value ='';
+  }
+ </script>
+ </head>
+ <body style="background-color: rgb(255, 255, 255);">
+          <!--navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#homr">TrainingPortfolio
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAzRJREFUSEvF1knMnlMUB/Bf1VAxVQ2RIER0o5LGQkKQaEoshLCgxFRNWyU0EvNUVRbGkmAhQkuMC4m0IdEmLLoxW4ggsZGwqCGGEPOQf3Oe5Obxvu/3fl8b31k9z73n3v85/zPdGaZJZkwTru0BPhW/YstUjJ8K8L54FOcX4HpcjR8mY8BkgRfhYRzQA/kKS/DKuODjAh+Ix3FmXRzwq/AHnsCKWn+h1r+ZyIBxgC/FWszGZ1iMN/EnfsMsnIyncSgCuhLPjwIfBXxIXbYAf+Mh3FIJtXN5+zt2K4A9cC8uZ1vSbsJFSBj+I4OAs3YF7sae+BSX4K3m9CDgbvsEPIPD8T2uwZN95D7wEXgWx+Ev3I9ViGetjAKO3u64B1eW92/gYnzRXdICn4YN2BUfl+K7Q+J0DN4v447GJ0P0TsQ6HImfsBBvR7cFXo3b64IAp3Q+7F04EzcgurvUXprIzZUD//T0jy0G59Z6ziYPhgJnL1kbmkNZkithSOyOb0oqCZX6jYTOJNOXSChyNsm4U2PM9bhvGHBqNGVxVh1I6byENRW7rRWGZG0keqnlOfgRtyIlmHBEnsPPWIaBwKE5FMbSO3EeHsF+jcUb69Jve5QeVGwkhp3EwOWVN6mQ0DyS6hgQ7wIc7/dvLgud8ebzHnDCkJ59UrP+NZZOBjhgaR5n1yWv42Xchb2rgdxW3SzJeWOxlGpI3Wbv3MaI5EWovmwY1W1WBzN0ZurkYCT9OtSfU//vVMxTTpF4fF21zPwnpsngtNpOBlLdxThKr+JCfNejNL+n4zEcXHuhPSCbB+jG2Berl2f7WjyQj7aOT0GSJ00/zb+rzZRSX+JFjMp02ge/DNBJSQUo+ZKaTwNJR/yoD5z/w5DRFoVI+nM8z1RqZaKWOa8ax/w6NLJldheHhczXNI69KplSYqGo834YcNbDVBpHl2xjDYnWq3YsZv09XFDTahBwvHsKnZeTHov9cGUkPoi8tRL7O2pqZWLlP6ykhG6qVrndD4HWgP7T54NqiRmdmddHlXJGakpwhzx9WgPSGFLL/9tjrwWfludta8AZ9TJ5bUANT7g0zitzwkumojBtwP8Clp7CH25lRdoAAAAASUVORK5CYII="/>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="port.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleCaptions">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#t">Internship</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Task
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../timetable.html">Task1</a></li>
+                      <li><a class="dropdown-item" href="../css/task22.html">Task2</a></li>
+                      <li><a class="dropdown-item" href="../layout.html/bootstraptask3.html">Task3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+          <!--nav bar end--><br>
+   <h2>welcome</h2>
+     <form action="/action_page.php">
+      <label for="fname">name:</label><br>
+      <input type="text" id="fname" name="fname" ><br>
+      <label for="lname">age:</label><br>
+      <input type="number" id="lname" name="lname" ><br><br>
+      
+    </form> 
+
+    <button onclick="agree()">agree</button>
+    <button onclick="disagree()">disagre</button>
+    <P id="p1"> </P> 
+</body>
+</html>
